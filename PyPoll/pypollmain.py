@@ -53,7 +53,7 @@ print("----------------------")
 print("Winner:" + " " + winner)
 print("----------------------")
 
-output_path = os.path.join("..", "Resources", "election winner.csv")
+output_path = os.path.join("..", "Resources", "electionwinner.csv")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(output_path, 'w') as csvfile:
