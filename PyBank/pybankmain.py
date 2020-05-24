@@ -43,7 +43,15 @@ netmonthlyaverage = sum(netchangelist)/len(netchangelist)
 print("Financial Analysis")
 print("--------------------------")
 print("Total Months:" + " ",int(monthscounter))
-print("Total:" + " " + str(profittotal))
-print("Average Change:" + " " + str(round(netmonthlyaverage,2)))
+print("Total:" + " " + "${:,.2f}".format(profittotal))
+print("Average Change:" + " " + "${:,.2f}".format(netmonthlyaverage))
 print("Greatest Increase in Profits:" + " "  + str(greatestincrease))
 print("Greatest Decrease in Profits:" + " "  + str(greatestdecrease))
+
+output_path = os.path.join("..", "Resources", "bankresults.csv")
+
+# Open the file using "write" mode. Specify the variable to hold the contents
+with open(output_path, 'w') as csvfile:
+
+    # Initialize csv.writer
+    csvwriter = csv.writer(csvfile, delimiter=',')

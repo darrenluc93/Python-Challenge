@@ -52,3 +52,13 @@ print("O'Tooley:"+ " " + "{:.2%}".format(otooleyvotes/totalvotes)+ " " + str(oto
 print("----------------------")
 print("Winner:" + " " + winner)
 print("----------------------")
+
+output_path = os.path.join("..", "Resources", "election winner.csv")
+
+# Open the file using "write" mode. Specify the variable to hold the contents
+with open(output_path, 'w') as csvfile:
+
+    # Initialize csv.writer
+    csvwriter = csv.writer(csvfile, delimiter=',')
+
+  
