@@ -55,10 +55,8 @@ print("----------------------")
 
 output_path = os.path.join("..", "Resources", "electionwinner.csv")
 
-# Open the file using "write" mode. Specify the variable to hold the contents
+# Open the file using "write" mode. 
 with open(output_path, 'w') as csvfile:
-
-    # Initialize csv.writer
     csvwriter = csv.writer(csvfile, delimiter=',')
 
   
