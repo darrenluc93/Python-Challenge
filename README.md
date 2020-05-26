@@ -1,2 +1,2 @@
 # Python-Challenge
-Python Homework for Coding Bootcamp
+Python Projects for Coding Bootcamp
